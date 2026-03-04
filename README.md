@@ -1,0 +1,1 @@
+# polylang-cpt-slug-override
