@@ -38,6 +38,20 @@ Open `polylang-cpt-slug-override.php` and edit the configuration section:
 - `base_default`: the default CPT base segment (usually the same as the CPT key)
 - `lang_map`: language mapping
 
+---
+
+### Notes / Limitations
+
+This plugin focuses on:
+
+- CPT single permalinks
+- Optional CPT archive rewrite
+- It does not automatically 301 redirect old URLs.
+- It assumes your Polylang language URLs use a prefix like /fr/.
+- If your site uses a different Polylang URL mode (subdomains, query parameter), you’ll need adjustments.
+
+---
+
 ### Example mapping
 
 ```php
@@ -47,3 +61,4 @@ private array $lang_map = [
   'fr' => ['prefix' => 'fr', 'base' => 'ville'],
   'es' => ['prefix' => 'es', 'base' => 'ciudad'],
 ];
+
